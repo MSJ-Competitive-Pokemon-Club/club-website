@@ -10,11 +10,13 @@ import Archive from "@/views/Archive.vue"
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/",        name: "Home",    componenet: Home},
-    { path: "/about",   name: "About",   componenet: About},
-    { path: "/learn",   name: "Learn",   componenet: Learn},
-    { path: "/archive", name: "Archive", componenet: Archive},
+    { path: "/",        name: "Home",    component: Home },
+    { path: "/about",   name: "About",   component: About   },
+    { path: "/learn",   name: "Learn",   component: Learn   },
+    { path: "/archive", name: "Archive", component: Archive },
   ]
 })
 
-createApp(App).use(router).mount('#app')
+createApp(App)
+.use(router)
+.mount('#app')

@@ -7,6 +7,8 @@
     <router-link to="/learn"> Learn </router-link>
     <router-link to="/archive"> Archive </router-link>
   </div>
+  <h1> Current view </h1>
+  <router-view></router-view>
 </template>
 
 <style>
