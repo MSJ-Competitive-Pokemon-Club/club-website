@@ -11,24 +11,24 @@ const routes = [
     componenet: Home,
   },
   {
-    path: "/",
+    path: "/about",
     name: "About",
     componenet: About,
   },
   {
-    path: "/",
+    path: "/learn",
     name: "Learn",
     componenet: Learn,
   },
   {
-    path: "/",
+    path: "/archive",
     name: "Archive",
     componenet: Archive,
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
