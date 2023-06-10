@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <template>
   <img alt="Vue logo" src="/favicon.ico">
   <div id="nav">
@@ -6,8 +9,8 @@
     <router-link to="/about"> About </router-link>
     <router-link to="/learn"> Learn </router-link>
     <router-link to="/archive"> Archive </router-link>
+    <!-- TODO Add a Banner -->
   </div>
-  <h1> Current view </h1>
   <router-view></router-view>
 </template>
 

@@ -1,0 +1,38 @@
+{
+    "officers": [
+        {
+            "name": "Prabhvir S. Babra",
+            "grade": "12",
+            "role": "President",
+            "headshot_url": ""
+        },
+
+        {
+            "name": "Ryan Shen",
+            "grade": "12",
+            "role": "Vice-President",
+            "headshot_url": ""
+        },
+
+        {
+            "name": "Raaif Qazi",
+            "grade": "12",
+            "role": "Activities Coordinater",
+            "headshot_url": ""
+        },
+
+        {
+            "name": "Alexander Lau",
+            "grade": "12",
+            "role": "Treasurer",
+            "headshot_url": ""
+        },
+
+        {
+            "name": "Aaron Chen",
+            "grade": "12",
+            "role": "Secretary",
+            "headshot_url": ""
+        }
+    ]
+}
