@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <img alt="Vue logo" src="/favicon.ico">
+  <img alt="Vue logo" src="/site-logo.png">
   <div id="nav">
     <h1>Routing</h1>
     <router-link to="/"> Home </router-link> |

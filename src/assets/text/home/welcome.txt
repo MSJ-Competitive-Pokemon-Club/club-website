@@ -1,1 +1,1 @@
-I love seperating parts of code to not have to think about it
+Generic welcome text

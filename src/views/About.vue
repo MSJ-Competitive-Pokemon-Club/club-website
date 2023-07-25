@@ -13,7 +13,7 @@
 
 <template>
   <div class="about">
-    <h1>About</h1>
+    <h1 id="page-title">About</h1>
   </div>
 
   <ul>
@@ -38,3 +38,7 @@
   <p v-else> About us spiel I'll put in a text file lmao </p>
 
 </template>
+
+<!-- Insert your CSS here -->
+<style>
+</style>
