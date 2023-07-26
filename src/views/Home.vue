@@ -1,6 +1,23 @@
 <script>
   import welcome_message from "/src/assets/text/home/welcome.txt?raw"
 
+  // Script for Discord button (in the Social Media section of the Home page)
+  const discordButton = document.getElementById('discord_button');
+  
+  // User can see that the button is clickable with this
+  discordButton.addEventListener('mouseover', function() {
+    discordButton.style.cursor = 'crosshair';
+  });
+
+  // discordButton.addEventListener('mouseout', function() {
+  //   discordButton.style.cursor = 'default';
+  // });
+
+  // Takes the user to discord.com (change later)
+  discordButton.addEventListener('click', function() {
+    window.location.href = 'https://discord.com';
+  });
+
   export default {
     data() {
       return {
@@ -98,15 +115,28 @@
   .social_media {
     padding-top:200px;
     padding-bottom:200px;
-    color:rgb(41, 79, 79);
+    color:rgb(90, 181, 181);
     width:100%;
     text-align:center;
     font-size:50px;
     background-color:rgb(41, 44, 131);
   }
   
-  .social_media_text {
-    padding:50px;
+  .social_media_image {
+    width:290px;
+  }
+
+  .social_media_button {
+    padding:0px;
+    border:0px;
+    margin:20px;
+    font-size:50px;
+    width: 300px;
+    height:300px;
+    font-family:Cambria;
+    background-color:rgb(41, 44, 131);
+    display:inline-block;
+    vertical-align:top;
   }
 
 
@@ -139,6 +169,25 @@
       <h3 class="social_media_text"> (Facebook) </h3>
       <h4 class="social_media_text"> (Do we really need an Instagram) </h4>
     </div>
+  </div>
+  <div class="room">
+    <div class="room_text">
+      <h1> Meeting Times: </h1>
+      <br>
+      <h2 class="room_subtext"> Tuesdays at B18 </h2>
+      <h2 class="room_subtext"> Ms. Williams' Room </h2>
+    </div><div class="room_image">
+            <h5>(Insert Image Here)</h5>
+          </div>
+  </div>
+  <div class="social_media">
+    <h1>Here's our social media</h1>
 
+    <button class="social_media_button" id="discord_button">
+      <img class="social_media_image" src="src\assets\images\discord-no-bg-3.png" alt="Discord">
+    </button><button class="social_media_button">
+      <!-- <img class="social_media_image" src="src\assets\images\facebook-no-bg-2.png" alt="Facebook"> -->
+      We basically only have Discord
+    </button><button class="social_media_button">And certainly not Instagram</button>
   </div>
 </template>
