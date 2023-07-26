@@ -114,33 +114,31 @@
 
 <template>
   <div class="home">
-    <h1>{{ welcome_message }}</h1>
-    <img :src="image_loc">
-  </div>
-  <h1 class="title"> MSJ Competitive Pokemon Club </h1>
-  <div class="about_us">
-    <img class="logo" :src="CPC_logo"><div class="who_are_we">
-      <h2 class="subtitle"> Who Are We? </h2>
-      <p class="about_text"> We are the MSJ Competitive Pokemon Club, an organization dedicated to the active study of competitive Pokemon. </p>
-      <p class="about_text">Drop by to receive lectures from our finest Trainers and start your career as a Pokemon Trainer! </p>
-      <p class="about_text"> We also hold tournaments with cash prizes!</p>
+    <h1 class="title"> MSJ Competitive Pokemon Club </h1>
+    <div class="about_us">
+      <img class="logo" :src="CPC_logo"><div class="who_are_we">
+        <h2 class="subtitle"> Who Are We? </h2>
+        <p class="about_text"> We are the MSJ Competitive Pokemon Club, an organization dedicated to the active study of competitive Pokemon. </p>
+        <p class="about_text">Drop by to receive lectures from our finest Trainers and start your career as a Pokemon Trainer! </p>
+        <p class="about_text"> We also hold tournaments with cash prizes!</p>
+      </div>
     </div>
-  </div>
-  <div class="room">
-    <div class="room_text">
-      <h1> Meeting Times: </h1>
-      <br>
-      <h2 class="room_subtext"> Tuesdays at B18 </h2>
-      <h2 class="room_subtext"> Ms. Williams' Room </h2>
-    </div><div class="room_image">
-            <h5>(Insert Image Here)</h5>
-          </div>
-  </div>
-  <div class="social_media">
-    <h1>Here's our social media</h1>
-    <h3 class="social_media_text"> (Discord) </h3>
-    <h3 class="social_media_text"> (Facebook) </h3>
-    <h4 class="social_media_text"> (Do we really need an Instagram) </h4>
-  </div>
+    <div class="room">
+      <div class="room_text">
+        <h1> Meeting Times: </h1>
+        <br>
+        <h2 class="room_subtext"> Tuesdays at B18 </h2>
+        <h2 class="room_subtext"> Ms. Williams' Room </h2>
+      </div><div class="room_image">
+        <h5>(Insert Image Here)</h5>
+      </div>
+    </div>
+    <div class="social_media">
+      <h1>Here's our social media</h1>
+      <h3 class="social_media_text"> (Discord) </h3>
+      <h3 class="social_media_text"> (Facebook) </h3>
+      <h4 class="social_media_text"> (Do we really need an Instagram) </h4>
+    </div>
 
+  </div>
 </template>
