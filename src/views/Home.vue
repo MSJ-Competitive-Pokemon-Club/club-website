@@ -184,7 +184,7 @@
     <h1>Here's our social media</h1>
 
     <button class="social_media_button" id="discord_button">
-      <img class="social_media_image" src="src\assets\images\discord-no-bg-3.png" alt="Discord">
+      <img class="social_media_image" src="src/assets/images/discord-no-bg-3.png" alt="Discord">
     </button><button class="social_media_button">
       <!-- <img class="social_media_image" src="src\assets\images\facebook-no-bg-2.png" alt="Facebook"> -->
       We basically only have Discord
