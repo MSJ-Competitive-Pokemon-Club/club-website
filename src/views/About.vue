@@ -28,8 +28,8 @@
     <li v-for="officer in officers">
       <div>
         <h1> {{ officer.name }} </h1>
-        <p> Grade: {{ officer.grade }} </p>
         <p> {{ officer.role }} </p>
+        <p> Grade: {{ officer.grade }} </p>
         <img :src="officer.headshot_url">
       </div>
     </li>

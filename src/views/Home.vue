@@ -1,22 +1,22 @@
 <script>
   import welcome_message from "/src/assets/text/home/welcome.txt?raw"
 
-  // Script for Discord button (in the Social Media section of the Home page)
-  const discordButton = document.getElementById('discord_button');
+  // // Script for Discord button (in the Social Media section of the Home page)
+  // const discordButton = document.getElementById('discord_button');
   
-  // User can see that the button is clickable with this
-  discordButton.addEventListener('mouseover', function() {
-    discordButton.style.cursor = 'crosshair';
-  });
-
-  // discordButton.addEventListener('mouseout', function() {
-  //   discordButton.style.cursor = 'default';
+  // // User can see that the button is clickable with this
+  // discordButton.addEventListener('mouseover', function() {
+  //   discordButton.style.cursor = 'crosshair';
   // });
 
-  // Takes the user to discord.com (change later)
-  discordButton.addEventListener('click', function() {
-    window.location.href = 'https://discord.com';
-  });
+  // // discordButton.addEventListener('mouseout', function() {
+  // //   discordButton.style.cursor = 'default';
+  // // });
+
+  // // Takes the user to discord.com (change later)
+  // discordButton.addEventListener('click', function() {
+  //   window.location.href = 'https://discord.com';
+  // });
 
   export default {
     data() {
@@ -152,22 +152,6 @@
         <p class="about_text">Drop by to receive lectures from our finest Trainers and start your career as a Pokemon Trainer! </p>
         <p class="about_text"> We also hold tournaments with cash prizes!</p>
       </div>
-    </div>
-    <div class="room">
-      <div class="room_text">
-        <h1> Meeting Times: </h1>
-        <br>
-        <h2 class="room_subtext"> Tuesdays at B18 </h2>
-        <h2 class="room_subtext"> Ms. Williams' Room </h2>
-      </div><div class="room_image">
-        <h5>(Insert Image Here)</h5>
-      </div>
-    </div>
-    <div class="social_media">
-      <h1>Here's our social media</h1>
-      <h3 class="social_media_text"> (Discord) </h3>
-      <h3 class="social_media_text"> (Facebook) </h3>
-      <h4 class="social_media_text"> (Do we really need an Instagram) </h4>
     </div>
   </div>
   <div class="room">

@@ -4,35 +4,35 @@
             "name": "Prabhvir S. Babra",
             "grade": "12",
             "role": "President",
-            "headshot_url": ""
+            "headshot_url": "src/assets/images/Officer1.png"
         },
 
         {
             "name": "Ryan Shen",
             "grade": "12",
             "role": "Vice-President",
-            "headshot_url": ""
+            "headshot_url": "src/assets/images/Officer2.png"
         },
 
         {
             "name": "Raaif Qazi",
             "grade": "12",
-            "role": "Activities Coordinater",
-            "headshot_url": ""
+            "role": "Activities Coordinator",
+            "headshot_url": "src/assets/images/Officer5.png"
         },
 
         {
             "name": "Alexander Lau",
             "grade": "12",
             "role": "Treasurer",
-            "headshot_url": ""
+            "headshot_url": "src/assets/images/Officer4.png"
         },
 
         {
             "name": "Aaron Chen",
             "grade": "12",
             "role": "Secretary",
-            "headshot_url": ""
+            "headshot_url": "src/assets/images/Officer3.png"
         }
     ]
 }
