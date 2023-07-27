@@ -4,12 +4,19 @@
   export default {
     data() {
       return {
-        officers: officer_data.officers,
+        officers23: officer_data.officers23,
         display_officers: false,
+        display_officers2023: false
       }
     }
   }
 </script>
+
+<style>
+  .officer_image {
+    width:250px;
+  }
+</style>
 
 <template>
   <div class="about">
@@ -18,21 +25,24 @@
 
   <ul>
     <li> <button @click="display_officers=false"> About Us </button> </li>
-    <li> <button @click="display_officers=true"> Officers </button> </li>
+    <li> <button @click="display_officers=!display_officers"> Officers </button> </li>
   </ul>
 
   <!-- I'll add a submenu for year once we go for multiple years -->
 
   <!-- TODO Consider making this a component to import -->
   <ul v-if="display_officers === true">
-    <li v-for="officer in officers">
+    <button @click="display_officers2023=!display_officers2023"> 2023-24 </button>
+    <ul v-if="display_officers2023 === true">
+      <li v-for="officer in officers23">
       <div>
         <h1> {{ officer.name }} </h1>
         <p> {{ officer.role }} </p>
         <p> Grade: {{ officer.grade }} </p>
-        <img :src="officer.headshot_url">
+        <img :src="officer.headshot_url" class="officer_image">
       </div>
-    </li>
+      </li>
+    </ul>
   </ul>
 
   <p v-else> About us spiel I'll put in a text file lmao </p>
