@@ -25,7 +25,6 @@
 </script>
 
 <template>
-
   <div class="learn">
     <div id="learn-sidepanel">
       <strong> Sidebar </strong>
@@ -46,6 +45,5 @@
       <h1> {{ this.lessonName }} </h1>
       <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="0"></iframe>
     </div>
-
   </div>
 </template>

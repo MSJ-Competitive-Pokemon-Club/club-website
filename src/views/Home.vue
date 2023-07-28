@@ -1,23 +1,6 @@
 <script>
   import welcome_message from "/src/assets/text/home/welcome.txt?raw"
 
-  // // Script for Discord button (in the Social Media section of the Home page)
-  // const discordButton = document.getElementById('discord_button');
-  
-  // // User can see that the button is clickable with this
-  // discordButton.addEventListener('mouseover', function() {
-  //   discordButton.style.cursor = 'crosshair';
-  // });
-
-  // // discordButton.addEventListener('mouseout', function() {
-  // //   discordButton.style.cursor = 'default';
-  // // });
-
-  // // Takes the user to discord.com (change later)
-  // discordButton.addEventListener('click', function() {
-  //   window.location.href = 'https://discord.com';
-  // });
-
   export default {
     data() {
       return {
@@ -29,123 +12,10 @@
   }
 </script>
 
-<style>
-  /* CSS Reset */
-  h1, h2, h3, h4, h5, h6 {
-    margin:0;
-    padding:0;
-  }
-
-  .about_us {
-    width:100%;
-    height:700px;
-    width:100%;
-    height:600px;
-    background-color:rgb(225, 220, 220);
-    padding-top:200px;
-    padding-bottom:200px;
-  }
-
-  .title {
-    text-align:center;
-    font-size:100px;
-    padding:20px;
-    background-color:firebrick;
-  }
-
-  .subtitle {
-    font-size:70px;
-    padding:20px;
-  }
-
-  .who_are_we {
-    text-align:left;
-    width:50%;
-    padding-left:10px;
-    line-height:1.5;
-    margin-bottom:50px;
-  }
-  
-  .about_text {
-    font-size:20px;
-    font-family:'Courier New';
-    padding-left:20px;
-    padding-right:50px;
-    padding-bottom:20px;
-  }
-
-  .logo {
-    width:35%;
-    padding:10px;
-    margin-top:20px;
-    background-color:rgb(224, 219, 219);
-  }
-
-  .logo, .who_are_we {
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  .room {
-    padding-top:200px;
-    padding-bottom:200px;
-    background-color:rgb(41, 79, 79);
-    width:100%;
-    text-align:center;
-    font-size:50px;
-    color:rgb(212, 206, 206);
-  }
-
-  .room_subtext {
-    font-size:45px;
-    color:gray;
-    font-family:Cambria;
-  }
-
-  .room_image {
-    padding-top:200px;
-  }
-
-  .room_text, .room_image {
-    display:inline-block;
-    vertical-align:top;
-    width:40%;
-  }
-
-  .social_media {
-    padding-top:200px;
-    padding-bottom:200px;
-    color:rgb(90, 181, 181);
-    width:100%;
-    text-align:center;
-    font-size:50px;
-    background-color:rgb(41, 44, 131);
-  }
-  
-  .social_media_image {
-    width:290px;
-  }
-
-  .social_media_button {
-    padding:0px;
-    border:0px;
-    margin:20px;
-    font-size:50px;
-    width: 300px;
-    height:300px;
-    font-family:Cambria;
-    background-color:rgb(41, 44, 131);
-    display:inline-block;
-    vertical-align:top;
-  }
-
-
-</style>
-
 <template>
-  <div class="home">
-    <h1 class="title"> MSJ Competitive Pokemon Club </h1>
-    <div class="about_us">
+  <div class="intro-section">
+    <h1 id="site-title"> MSJ Competitive Pokemon Club </h1>
+    <div id="about_us">
       <img class="logo" :src="CPC_logo"><div class="who_are_we">
         <h2 class="subtitle"> Who Are We? </h2>
         <p class="about_text"> We are the MSJ Competitive Pokemon Club, an organization dedicated to the active study of competitive Pokemon. </p>
@@ -154,24 +24,57 @@
       </div>
     </div>
   </div>
-  <div class="room">
+  <div id="meeting-section">
     <div class="room_text">
       <h1> Meeting Times: </h1>
       <br>
       <h2 class="room_subtext"> Tuesdays at B18 </h2>
       <h2 class="room_subtext"> Ms. Williams' Room </h2>
-    </div><div class="room_image">
-            <h5>(Insert Image Here)</h5>
-          </div>
+    </div>
+    <div class="room_image">
+      <h5>(Insert Image Here)</h5>
+    </div>
   </div>
-  <div class="social_media">
+  <div id="social_media">
     <h1>Here's our social media</h1>
-
-    <button class="social_media_button" id="discord_button">
-      <img class="social_media_image" src="src/assets/images/discord-no-bg-3.png" alt="Discord">
-    </button><button class="social_media_button">
-      <!-- <img class="social_media_image" src="src\assets\images\facebook-no-bg-2.png" alt="Facebook"> -->
-      We basically only have Discord
-    </button><button class="social_media_button">And certainly not Instagram</button>
+    <!-- TODO Flesh out this social media link list -->
+    <ul id="social-media-list">
+      <li>Discord</li>
+      <li>Facebook</li>
+      <li>Instagram</li>
+    </ul>
   </div>
 </template>
+
+<style>
+#site-title {
+  text-align: center;
+}
+
+div#about_us {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+}
+
+.logo {
+  width: 100%;
+}
+
+#meeting-section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+}
+
+div#social-media {
+  margin: auto;
+}
+
+ul#social-media-list > li {
+  display: inline-block;
+}
+
+</style>
