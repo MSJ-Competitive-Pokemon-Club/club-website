@@ -1,0 +1,19 @@
+{
+    "socials": [
+        {
+            "name": "Facebook",
+            "link": "https://en.wikipedia.org/wiki/Toilets_in_Japan",
+            "path": "src/assets/images/social-logos/facebook-logo.png"
+        },
+        {
+            "name": "Discord",
+            "link": "https://en.wikipedia.org/wiki/Toilets_in_Japan",
+            "path": "src/assets/images/social-logos/discord-logo.png"
+        },
+        {
+            "name": "Instagram",
+            "link": "https://en.wikipedia.org/wiki/Toilets_in_Japan",
+            "path": "src/assets/images/social-logos/instagram-logo.png"
+        }
+    ]
+}
