@@ -111,7 +111,7 @@ div#social-media {
 
 div#room-image > img {
   width: 100%;
-  margin-left: 11%;
+  margin-left: 9.3%;
 }
 
 #social_media {
