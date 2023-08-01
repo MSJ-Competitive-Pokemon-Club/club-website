@@ -8,7 +8,7 @@
       return {
         categories: lessonData.categories,
         currentLessonName: "Test",
-        currentReplayLoc: "src/assets/lessons/test.html",
+        currentReplayLoc: null,
         options: ['test','test2'],
         selectedOption: null
       }
