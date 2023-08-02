@@ -9,7 +9,13 @@
         categories: lessonData.categories,
         currentLessonName: "Test",
         currentReplayLoc: null,
-        options: ['test','test2'],
+        currentReplayLocText: null,
+        options: [
+        'Move Base Power',
+        'Statuses',
+        'Type Matchups'
+      
+      ],
         selectedOption: null
       }
       
@@ -27,44 +33,59 @@
 
 <template>
 <div id="title">Learn</div>
-<div id="learn">
-  <div id="sidebar">
-    <div 
-      v-for="(option, index) in options"
-      :key="index"
-      :class="{ 'option': true, 'selected': selectedOption === index }"
-      @click="() => {
-        selectedOption = index;
-        currentReplayLoc = 'src/assets/lessons/'+ option + '.html';
-      }"
-    >
+<div id="grid-container">
+  <div class="grid-item">
+    <div id="sidebar">
+     <div 
+        v-for="(option, index) in options"
+        :key="index"
+        :class="{ 'option': true, 'selected': selectedOption === index }"
+        @click="() => {
+          selectedOption = index;
+          currentReplayLoc = 'src/assets/lessons/'+ option + '.html';
+          currentReplayLocText = 'src/assets/text/archive/'+ option + ' Text.html';
+        }"
+      >
       {{ option }}
     </div>
   </div>
-
+</div>
+<div class="grid-item">
   <div id="learn-display">
-      <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="0"></iframe>
+      <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="q0"></iframe>
+      <iframe id="iframe" ref="caption" :src="currentReplayLocText" width="100%" height="600px" frameborder="0"></iframe>
   </div>
+</div>
 </div>
 </template>
 <style scoped>
-
 #title{
   font-size:150px;
   text-align:center
 }
+#grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 #sidebar {
-    width:200px;
-    height: 10vh;
+
+    width:400px;
+    height: 20vh;
     overflow-y: auto;
     text-align: left;
 }
 
 #learn-display {
-  width:2000px;
+
+  display: grid;
+  width: 1200px;
   height: 100vh;
-  overflow-y: auto;
-  text-align: right;
+  text-align: center;
 }
 .option {
     padding: 10px;
