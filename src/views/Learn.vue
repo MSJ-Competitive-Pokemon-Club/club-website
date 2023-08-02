@@ -11,10 +11,9 @@
         currentReplayLoc: null,
         currentReplayLocText: null,
         options: [
-        'test',
-        'test2',
         'Move Base Power',
-        'Statuses'
+        'Statuses',
+        'Type Matchups'
       
       ],
         selectedOption: null
@@ -44,7 +43,7 @@
         @click="() => {
           selectedOption = index;
           currentReplayLoc = 'src/assets/lessons/'+ option + '.html';
-          currentReplayLocText = 'src/assets/lessons/'+ option + ' Text.html';
+          currentReplayLocText = 'src/assets/text/archive/'+ option + ' Text.html';
         }"
       >
       {{ option }}
@@ -53,8 +52,8 @@
 </div>
 <div class="grid-item">
   <div id="learn-display">
-      <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="0"></iframe>
-      <iframe id="iframe" ref="battle" :src="currentReplayLocText" width="100%" height="600px" frameborder="0"></iframe>
+      <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="q0"></iframe>
+      <iframe id="iframe" ref="caption" :src="currentReplayLocText" width="100%" height="600px" frameborder="0"></iframe>
   </div>
 </div>
 </div>
@@ -69,7 +68,6 @@
   grid-template-columns: auto auto;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
