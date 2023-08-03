@@ -14,7 +14,9 @@
         'Move Base Power',
         'Statuses',
         'Type Matchups',
-        'Abilities'
+        'Abilities',
+        'Items',
+        'Secondary Effects'
       
       ],
         selectedOption: null
