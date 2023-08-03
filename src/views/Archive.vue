@@ -21,6 +21,7 @@
     font-size:3em;
     font-family:Cambria;
     padding-bottom:50px;
+    border-bottom:3px solid;
   }
 
   .archive_text {
@@ -105,6 +106,5 @@
     </li>
 
     <button v-if="!display_older_slides" @click="display_older_slides = true" class="archive_button">Load older slideshows</button>
-
   </ul>
 </template>
