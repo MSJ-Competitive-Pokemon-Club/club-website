@@ -93,7 +93,7 @@
 }
 .option {
     padding: 10px;
-    font-size: 12px;
+    font-size: 20px;
     cursor: pointer;
 }
 
