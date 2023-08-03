@@ -13,7 +13,8 @@
         options: [
         'Move Base Power',
         'Statuses',
-        'Type Matchups'
+        'Type Matchups',
+        'Abilities'
       
       ],
         selectedOption: null
@@ -75,7 +76,7 @@
 #sidebar {
 
     width:400px;
-    height: 20vh;
+    height: 100vh;
     overflow-y: auto;
     text-align: left;
 }
@@ -86,6 +87,7 @@
   width: 1200px;
   height: 100vh;
   text-align: center;
+  overflow-y: auto;
 }
 .option {
     padding: 10px;
