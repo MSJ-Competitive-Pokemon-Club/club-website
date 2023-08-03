@@ -5,7 +5,8 @@
     data() {
         return {
           recent: slides_data.most_recent,
-          display_older_slides: false,
+          older: slides_data.archival,
+          display_older_slides: false
         }
     }
   }
@@ -32,7 +33,8 @@
   .archive_slideshow {
     position:relative;
     width:60%;
-    padding-bottom: 40%; /* For aspect ratio */ 
+    padding-bottom: 35%; /* For aspect ratio */
+    margin-left:2%;
   }
 
   .archive_slideshow iframe {
@@ -42,7 +44,6 @@
 
   .archive_slide {
     width:100%;
-    padding-left:2%;
   }
 
   .archive_text, .archive_slideshow {
@@ -92,7 +93,7 @@
       </li>
     </div>
 
-    <!-- <li v-for="folder in recent" class="archive_section">
+    <li v-if="display_older_slides" v-for="folder in older">
       <div class="archive_text">
         <h1> {{ folder.name }} </h1>
         <br>
@@ -101,8 +102,9 @@
           <iframe :src="slideshow.url" frameborder="0" class="archive_slide" allowfullscreen="true" width="500%" height="500%"
           mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
       </li>
-    </li> -->
+    </li>
 
-    <button @click="display_older_slides = !display_older_slides" class="archive_button">Load more slideshows</button>
+    <button v-if="!display_older_slides" @click="display_older_slides = true" class="archive_button">Load older slideshows</button>
+
   </ul>
 </template>
