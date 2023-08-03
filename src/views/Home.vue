@@ -68,16 +68,19 @@ div#about_us {
 }
 
 #who-are-we {
-  margin-bottom: 6%;
+  margin-bottom: 4%;
 }
 div#welcome-message-section {
   white-space: pre-wrap;
-  font-size: 2.5vw;
+  font-size: 2.4vw;
   text-align: center;
+  line-height:1.3;
+  margin-left:3%;
 }
 #subtitle {
   text-align: center;
   font-size: 4vw;
+  margin-bottom: 5%;
 }
 .logo {
   width: 100%;
