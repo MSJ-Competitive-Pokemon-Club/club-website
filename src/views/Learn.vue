@@ -7,9 +7,9 @@
     data() {
       return {
         categories: lessonData.categories,
-        currentLessonName: "Test",
-        currentReplayLoc: null,
-        currentReplayLocText: null,
+        currentLessonName: "Move Base Power",
+        currentReplayLoc: "src/assets/lessons/Move Base Power.html",
+        currentReplayLocText: "src/assets/text/archive/Move Base Power Text.html",
         options: [
         'Move Base Power',
         'Statuses',
@@ -19,7 +19,7 @@
         'Secondary Effects'
       
       ],
-        selectedOption: null
+        selectedOption: 0
       }
       
     },
