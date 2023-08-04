@@ -27,6 +27,7 @@
   .archive_text {
     font-size:2.5em;
     padding-left:1%;
+    font-family:Cambria;
     padding-right:1%;
     width:30%;
   }
