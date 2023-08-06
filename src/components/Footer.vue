@@ -6,7 +6,6 @@ export default {}
   <div id="footer">
     <div id="basic-info-col" class="footer-col">
       <img alt="CPC Logo" src="/site-logo.png">
-      <!-- TODO Replace this with content from a text file hopefully -->
       <div id="contact-us-button">
         <!-- TODO Fill in links -->
         <!-- TODO Find the club email since I forgor :skull: -->
@@ -15,10 +14,10 @@ export default {}
     </div>
     <div id="nav-page-col" class="footer-col">
       <h2 id="nav-page-title"> Pages </h2>
-      <router-link to="/club-website"> Home </router-link>
-      <router-link to="/club-website/about"> About </router-link>
-      <router-link to="/club-website/learn"> Learn </router-link>
-      <router-link to="/club-website/archive"> Archive </router-link>
+      <router-link to="/"> Home </router-link>
+      <router-link to="/about"> About </router-link>
+      <router-link to="/learn"> Learn </router-link>
+      <router-link to="/archive"> Archive </router-link>
     </div>
     <div id="socials-col" class="footer-col">
       <h2 id="nav-page-title"> Social Media </h2>

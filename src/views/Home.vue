@@ -1,15 +1,15 @@
 <script>
-  import welcome_message from "/src/assets/text/home/welcome.txt?raw"
-  import socialsData from "/src/assets/config/social-buttons.json"
+  import welcome_message from "/public/assets/text/home/welcome.txt?raw"
+  import socialsData from "/public/assets/config/social-buttons.json"
 
   export default {
     data() {
       return {
         welcome_message,
         socialsButtons: socialsData.socials,
-        image_loc: '/src/assets/images/logo_test.png',
-        CPC_logo: '/src/assets/images/CPC_logo.png',
-        doorLoc: '/src/assets/images/door-open.png',
+        image_loc: '/assets/images/logo_test.png',
+        CPC_logo: '/assets/images/CPC_logo.png',
+        doorLoc: '/assets/images/door-open.png',
       }
     }
   }

@@ -1,5 +1,5 @@
 <script>
-  import slides_data from "/src/assets/text/archive/slides_data.json"
+  import slides_data from "/public/assets/text/archive/slides_data.json"
 
   export default {
     data() {

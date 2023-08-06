@@ -1,15 +1,15 @@
 <script>
   import LessonButton from "../components/LessonButton.vue"
 
-  import lessonData from "/src/assets/lessons/lessonInfo.json"
+  import lessonData from "/public/assets/lessons/lessonInfo.json"
 
   export default {
     data() {
       return {
         categories: lessonData.categories,
         currentLessonName: "Move Base Power",
-        currentReplayLoc: "src/assets/lessons/Move Base Power.html",
-        currentReplayLocText: "src/assets/text/archive/Move Base Power Text.html",
+        currentReplayLoc: "/assets/lessons/Move Base Power.html",
+        currentReplayLocText: "/assets/text/archive/Move Base Power Text.html",
         options: [
         'Move Base Power',
         'Statuses',
@@ -45,8 +45,8 @@
         :class="{ 'option': true, 'selected': selectedOption === index }"
         @click="() => {
           selectedOption = index;
-          currentReplayLoc = 'src/assets/lessons/'+ option + '.html';
-          currentReplayLocText = 'src/assets/text/archive/'+ option + ' Text.html';
+          currentReplayLoc = '/assets/lessons/'+ option + '.html';
+          currentReplayLocText = '/assets/text/archive/'+ option + ' Text.html';
         }"
       >
       {{ option }}
