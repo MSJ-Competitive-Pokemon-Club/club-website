@@ -8,8 +8,8 @@
       return {
         categories: lessonData.categories,
         currentLessonName: "Move Base Power",
-        currentReplayLoc: "/assets/lessons/Move Base Power.html",
-        currentReplayLocText: "/assets/text/archive/Move Base Power Text.html",
+        currentReplayLoc: "/club-website/assets/lessons/Move Base Power.html",
+        currentReplayLocText: "/club-website/assets/text/archive/Move Base Power Text.html",
         options: [
         'Move Base Power',
         'Statuses',
@@ -45,8 +45,8 @@
         :class="{ 'option': true, 'selected': selectedOption === index }"
         @click="() => {
           selectedOption = index;
-          currentReplayLoc = '/assets/lessons/'+ option + '.html';
-          currentReplayLocText = '/assets/text/archive/'+ option + ' Text.html';
+          currentReplayLoc = '/club-website/assets/lessons/'+ option + '.html';
+          currentReplayLocText = '/club-website/assets/text/archive/'+ option + ' Text.html';
         }"
       >
       {{ option }}

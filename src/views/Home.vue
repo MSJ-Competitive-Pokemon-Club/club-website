@@ -7,9 +7,9 @@
       return {
         welcome_message,
         socialsButtons: socialsData.socials,
-        image_loc: '/assets/images/logo_test.png',
-        CPC_logo: '/assets/images/CPC_logo.png',
-        doorLoc: '/assets/images/door-open.png',
+        image_loc: '/club-website/assets/images/logo_test.png',
+        CPC_logo: '/club-website/assets/images/CPC_logo.png',
+        doorLoc: '/club-website/assets/images/door-open.png',
       }
     }
   }
