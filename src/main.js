@@ -15,7 +15,7 @@ const router = createRouter({
     { path: "/club-website/learn",   name: "Learn",   component: Learn   },
     { path: "/club-website/archive", name: "Archive", component: Archive },
   ],
-  mode: 'history'
+  mode: 'hash'
 })
 
 createApp(App)
