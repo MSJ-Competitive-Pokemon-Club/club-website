@@ -15,10 +15,10 @@ export default {}
     </div>
     <div id="nav-page-col" class="footer-col">
       <h2 id="nav-page-title"> Pages </h2>
-      <router-link to="/"> Home </router-link>
-      <router-link to="/about"> About </router-link>
-      <router-link to="/learn"> Learn </router-link>
-      <router-link to="/archive"> Archive </router-link>
+      <router-link to="/club-website"> Home </router-link>
+      <router-link to="/club-website/about"> About </router-link>
+      <router-link to="/club-website/learn"> Learn </router-link>
+      <router-link to="/club-website/archive"> Archive </router-link>
     </div>
     <div id="socials-col" class="footer-col">
       <h2 id="nav-page-title"> Social Media </h2>

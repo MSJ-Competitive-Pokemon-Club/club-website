@@ -10,13 +10,13 @@ export default {
   <div id="topbar">
     <div id="lefthand-menu">
       <img alt="CPC Logo" src="/site-logo.png">
-      <h1 id="title"> <router-link to="/"> {{ title }} </router-link> </h1>
+      <h1 id="title"> <router-link to="/club-website/"> {{ title }} </router-link> </h1>
     </div>
 
     <div id="righthand-menu">
-      <router-link id="about-button" class="header-link" to="/about"> About </router-link>
-      <router-link id="learn-button" class="header-link" to="/learn"> Learn </router-link>
-      <router-link id="archive-button" class="header-link" to="/archive"> Archive </router-link>
+      <router-link id="about-button" class="header-link" to="/club-website/about"> About </router-link>
+      <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn </router-link>
+      <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive </router-link>
     </div>
   </div>
 
