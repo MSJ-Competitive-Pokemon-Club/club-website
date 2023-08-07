@@ -16,7 +16,8 @@
         'Type Matchups',
         'Abilities',
         'Items',
-        'Secondary Effects'
+        'Secondary Effects',
+        'Priority Moves'
       
       ],
         selectedOption: 0
@@ -39,6 +40,7 @@
 <div id="grid-container">
   <div class="grid-item">
     <div id="sidebar">
+      <h1>Lessons</h1>
      <div 
         v-for="(option, index) in options"
         :key="index"
@@ -77,10 +79,10 @@
 }
 #sidebar {
 
-    width:400px;
+    width: 250px;
     height: 100vh;
     overflow-y: auto;
-    text-align: left;
+    text-align: center;
 }
 
 #learn-display {
@@ -95,11 +97,15 @@
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
+      transition: transform 0.2s ease;
 }
 
 .option.selected {
-    font-size: 48px; /* Enlarge the selected option */
-    color:red
+    font-size: 25px; /* Enlarge the selected option */
+    color:orangered
 }
-
+.option:hover {
+    transform: scale(1.1);
+    color:red
+  }
 </style>
