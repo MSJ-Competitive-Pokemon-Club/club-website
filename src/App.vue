@@ -21,6 +21,7 @@ export default {
 
 <style>
 * {
+  font-size:50px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
