@@ -98,6 +98,7 @@ p.officer-grade {
 }
 p.officer-desc {
   text-align: center;
+  font-size: 2.5vw;
 }
 
 ul#officer-display {
