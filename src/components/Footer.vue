@@ -53,10 +53,14 @@ div#contact-us-button {
 div#contact-us-button > a {
   text-decoration: none;
   color: black;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 div#contact-us-button:hover {
   text-decoration: underline;
+}
+
+.footer-col > h2 {
+  font-size: 4vw;
 }
 
 #basic-info-col > img {
@@ -65,10 +69,15 @@ div#contact-us-button:hover {
   margin-left: 1vw;
 }
 
+#nav-page-col {
+  padding-right: 10%;
+}
+
 #socials-col > a,
 #nav-page-col > a {
     color: black;
     text-decoration: none;
+    font-size: 3vw;
 }
 
 #socials-col > a:hover,
