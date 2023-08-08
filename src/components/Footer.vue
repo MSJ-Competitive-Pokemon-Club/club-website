@@ -9,7 +9,7 @@ export default {}
       <div id="contact-us-button">
         <!-- TODO Fill in links -->
         <!-- TODO Find the club email since I forgor :skull: -->
-        <a href=""> Contact Us! </a>
+        <a href="mailto:msjcomppokeclub@gmail.com"> Contact Us! </a>
       </div>
     </div>
     <div id="nav-page-col" class="footer-col">

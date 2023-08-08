@@ -5,7 +5,7 @@
             "grade": "12",
             "role": "President",
             "headshot_url": "/club-website/assets/images/Officer1.png",
-            "officer_desc": "Write something"
+            "officer_desc": "Senior Prabhvir Babra enjoys working in a variety of fields. He has an interest in Computer Security, robotics, and low level systems. Prabhvir is also the creator of the comic series Prababamaba Comics, with a focus on surreal, dark, and punny humor. In Pokemon Showdown, Prabhvir primarily plays Gen 9 OU and his favorite Pokemon is Venemoth."
         },
 
         {
@@ -35,47 +35,6 @@
         {
             "name": "Aaron Chen",
             "grade": "12",
-            "role": "Secretary",
-            "headshot_url": "/club-website/assets/images/Officer3.png",
-            "officer_desc": "Write something"
-        }
-    ],
-    "officers2223": [
-        {
-            "name": "Prabhvir S. Babra",
-            "grade": "11",
-            "role": "President",
-            "headshot_url": "/club-website/assets/images/Officer1.png",
-            "officer_desc": "Write something"
-        },
-
-        {
-            "name": "Ryan Shen",
-            "grade": "11",
-            "role": "Vice-President",
-            "headshot_url": "/club-website/assets/images/Officer2.png",
-            "officer_desc": "Write something"
-        },
-
-        {
-            "name": "Raaif Qazi",
-            "grade": "11",
-            "role": "Activities Coordinator",
-            "headshot_url": "/club-website/assets/images/Officer5.png",
-            "officer_desc": "Write something"
-        },
-
-        {
-            "name": "Alexander Lau",
-            "grade": "11",
-            "role": "Treasurer",
-            "headshot_url": "/club-website/assets/images/Officer4.png",
-            "officer_desc": "Write something"
-        },
-
-        {
-            "name": "Aaron Chen",
-            "grade": "11",
             "role": "Secretary",
             "headshot_url": "/club-website/assets/images/Officer3.png",
             "officer_desc": "Write something"

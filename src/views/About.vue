@@ -24,7 +24,6 @@
 
     <ul id="year-list">
       <li> <a @click="currentOfficerList = officerData.officers2324; displayYear = '2023-2024';"> 2023-2024 </a> </li>
-      <li> <a @click="currentOfficerList = officerData.officers2223; displayYear = '2022-2023';"> 2022-2023 </a> </li>
     </ul>
 
     <ul id="officer-display">
@@ -86,9 +85,6 @@ img.officer-image {
   object-fit: cover;
 }
 
-div.officer-text-section {
-  background: #e4d9eb;
-}
 h2.role-desc {
   text-align: center;
   font-size: 2.3vw;
