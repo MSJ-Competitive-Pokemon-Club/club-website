@@ -22,9 +22,9 @@ export default {}
     <div id="socials-col" class="footer-col">
       <h2 id="nav-page-title"> Social Media </h2>
       <!-- Add/replace with images -->
-      <a href=""> Discord </a>
-      <a href=""> Facebook </a>
-      <a href=""> Instagram </a>
+      <a href="https://discord.gg/EUG3r98Hz"> Discord </a>
+      <a href="https://www.facebook.com/groups/636866185077720"> Facebook </a>
+      <a href="https://www.instagram.com/msj_competitivepokemonclub/"> Instagram </a>
     </div>
   </div>
 </template>
