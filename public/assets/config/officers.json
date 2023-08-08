@@ -13,7 +13,7 @@
             "grade": "12",
             "role": "Vice-President",
             "headshot_url": "/club-website/assets/images/Officer2.png",
-            "officer_desc": "Write something"
+            "officer_desc": "My name's Ryan Shen, rising senior at MSJ and Vice President of the club. I got into competitive pokemon because I grew up with Pokemon since gen 4, and I like the game's interesting RPG mechanics in the competitive scene. I like listening to music and reading about history. "
         },
 
         {
@@ -21,7 +21,7 @@
             "grade": "12",
             "role": "Activities Coordinator",
             "headshot_url": "/club-website/assets/images/Officer5.png",
-            "officer_desc": "Write something"
+            "officer_desc": "My name is Raaif, and the thing I like most about competitive Pokemon is team building. Building around a certain Pokemon or a certain archetype is fun and rewarding when you play. Pokemon is one of my biggest hobbies but I also like to play a variety of other games."
         },
 
         {
@@ -29,7 +29,8 @@
             "grade": "12",
             "role": "Treasurer",
             "headshot_url": "/club-website/assets/images/Officer4.png",
-            "officer_desc": "Write something"
+            "officer_desc": ""Hello! My name is Alexander Lau, and I'm (also)* a rising senior. I've been a longtime player of the mainline Pokemon games and thus have branched into competitive Pokemon too! Other than that I enjoy computer science sometimes"
+"
         },
 
         {
@@ -37,7 +38,8 @@
             "grade": "12",
             "role": "Secretary",
             "headshot_url": "/club-website/assets/images/Officer3.png",
-            "officer_desc": "Write something"
+            "officer_desc": "My name is Aaron Chen, a rising senior. I got into competitive pokemon because I really wanted to play around with megas in gen 6 and got into Showdown. In my spare time, when not playing Showdown, I am often listening to music and/or reading. 
+"
         }
     ]
 }
