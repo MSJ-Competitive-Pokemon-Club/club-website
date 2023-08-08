@@ -70,7 +70,7 @@
 }
 #grid-container{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 30% 70%;
 }
 .grid-item {
   padding: 20px;
@@ -88,20 +88,20 @@
 #learn-display {
 
   display: grid;
-  width: 1200px;
+  width: 100%;
   height: 100vh;
   text-align: center;
   overflow-y: auto;
 }
 .option {
     padding: 10px;
-    font-size: 20px;
+    font-size: 2vw;
     cursor: pointer;
-      transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .option.selected {
-    font-size: 25px; /* Enlarge the selected option */
+    font-size: 2.5vw; /* Enlarge the selected option */
     color:orangered
 }
 .option:hover {
