@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: IPS-Medium;
 }
 
+<<<<<<< HEAD
 div, p, a {
+=======
+p, a {
+>>>>>>> 7565cda (Use IBM Plex Sans as new font)
     font-family: IPS-Regular;
 }

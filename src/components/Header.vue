@@ -56,10 +56,16 @@ h1#title {
   text-align: left;
   font-size: 3.2vw;
 }
+<<<<<<< HEAD
 div#topbar a {
   text-decoration: none;
   color: black;
   transition: transform 0.2s ease;
+=======
+#lefthand-menu > h1#title {
+    padding-top: 15px;
+    font-family: IPS-Medium;
+>>>>>>> 7565cda (Use IBM Plex Sans as new font)
 }
 div#topbar a:hover {
   color: black;
@@ -83,7 +89,32 @@ ul#righthand-menu > li {
   font-size: 4vw;
 }
 a.header-link {
+<<<<<<< HEAD
   font-size: 3.2vw;
+=======
+    float: right;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 7px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+}
+a.header-link:hover {
+    text-decoration: underline;
+}
+#crew-button {
+    background: #80edb9;
+    font-family: IPS-Medium;
+}
+#learn-button {
+    background: #faee38;
+}
+#archive-button {
+    background: #fa385b;
+>>>>>>> 7565cda (Use IBM Plex Sans as new font)
 }
 
 
