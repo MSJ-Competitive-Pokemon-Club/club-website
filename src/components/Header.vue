@@ -53,6 +53,7 @@ div#topbar {
 }
 #lefthand-menu > h1#title {
     padding-top: 15px;
+    font-family: IPS-Medium;
 }
 #lefthand-menu > h1#title > a {
     text-decoration: none;
@@ -83,6 +84,7 @@ a.header-link:hover {
 }
 #crew-button {
     background: #80edb9;
+    font-family: IPS-Medium;
 }
 #learn-button {
     background: #faee38;

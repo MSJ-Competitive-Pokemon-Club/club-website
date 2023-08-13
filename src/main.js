@@ -2,6 +2,11 @@ import { createApp } from 'vue'
 import { createWebHistory, createRouter } from 'vue-router'
 import App from '@/components/App.vue'
 
+// Universal Styling rules
+import './assets/css/universal.css'
+// Fonts
+import './assets/css/fonts.css'
+
 import Home from "@/views/Home.vue"
 import Crew from "@/views/Crew.vue"
 import Learn from "@/views/Learn.vue"
