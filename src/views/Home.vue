@@ -1,15 +1,14 @@
 <script>
-  import welcome_message from "/public/assets/text/home/welcome.txt?raw"
-  import socialsData from "/public/assets/config/social-buttons.json"
+  import welcome_message from "/src/welcome.txt?raw"
+  import socialsData from "/src/config/social-buttons.json"
 
   export default {
     data() {
       return {
         welcome_message,
         socialsButtons: socialsData.socials,
-        image_loc: '/club-website/assets/images/logo_test.png',
-        CPC_logo: '/club-website/assets/images/CPC_logo.png',
-        doorLoc: '/club-website/assets/images/door-open.png',
+        CPC_logo: '/club-website/assets/images/CPC_logo_full.png',
+        doorLoc: '/club-website/assets/images/door-open.png'
       }
     }
   }
@@ -19,7 +18,7 @@
   <div class="intro-section">
     <h1 id="site-title"> MSJ Competitive Pokemon Club </h1>
     <div id="about_us">
-      <img class="logo" :src="CPC_logo">
+      <img class="logo" alt="CPC_logo" :src="CPC_logo">
       <div id="who-are-we">
         <h2 id="subtitle"> Who Are We? </h2>
         <div id="welcome-message-section"> {{ welcome_message }}</div>
@@ -32,7 +31,7 @@
       <h2 class="room-text" id="join-us"> Come Join Us! </h2>
     </div>
     <div id="room-image">
-      <img :src="doorLoc">
+      <img alt="Meet us at B18!" :src="doorLoc">
     </div>
   </div>
   <div id="social_media">
@@ -42,7 +41,7 @@
       <li v-for="social in socialsButtons">
         <a :href="social.link">
           <div class="social-button">
-            <img :src="social.path">
+            <img alt="Join our" :src="social.path">
             <h4> {{ social.name }} </h4>
           </div>
         </a>

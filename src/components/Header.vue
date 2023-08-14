@@ -9,7 +9,7 @@ export default {
 <template>
   <div id="topbar">
     <div id="lefthand-menu">
-      <img alt="CPC Logo" src="/site-logo.png">
+      <img alt="CPC Logo" src="/assets/images/site-logo.png">
       <h1 id="title"> <router-link to="/club-website"> {{ title }} </router-link> </h1>
     </div>
 
@@ -21,7 +21,7 @@ export default {
   </div>
 
   <div id="site-banner">
-    <img alt="CPC Banner" src="/banner.png">
+    <img alt="CPC Banner" src="/assets/images/banner.png">
   </div>
 
   <div id="ghost-element"></div>

@@ -5,7 +5,7 @@ export default {}
 <template>
   <div id="footer">
     <div id="basic-info-col" class="footer-col">
-      <img alt="CPC Logo" src="/site-logo.png">
+      <img alt="CPC Logo" src="/src/assets/site-logo.png">
       <div id="contact-us-button">
         <!-- TODO Fill in links -->
         <!-- TODO Find the club email since I forgor :skull: -->

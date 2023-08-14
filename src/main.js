@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createWebHistory, createRouter } from 'vue-router'
-import App from './App.vue'
+import App from '@/components/App.vue'
 
 import Home from "@/views/Home.vue"
 import About from "@/views/About.vue"

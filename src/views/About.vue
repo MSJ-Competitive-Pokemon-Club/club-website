@@ -1,5 +1,5 @@
 <script>
-  import officerData from "/public/assets/config/officers.json"
+  import officerData from "/src/config/officers.json"
 
   export default {
     data() {
