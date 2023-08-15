@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <Header title="CPC Club" ></Header>
+  <Header title="MSJ CPC" ></Header>
 
   <router-view></router-view>
 

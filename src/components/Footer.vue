@@ -5,7 +5,10 @@ export default {}
 <template>
   <div id="footer">
     <div id="basic-info-col" class="footer-col">
-      <img alt="CPC Logo" src="/src/assets/site-logo.png">
+      <div id="title-top">
+        <img alt="CPC Logo" src="/src/assets/site-logo.png">
+        <h1 id="footer-title"> MSJ CPC </h1>
+      </div>
       <div id="contact-us-button">
         <!-- TODO Fill in links -->
         <a href="mailto:msjcomppokeclub@gmail.com"> Contact Us! </a>
@@ -32,13 +35,17 @@ export default {}
 #footer {
   width: 100%;
   display: grid;
-  grid-template-columns: 60% 15% 15%;
+  grid-template-columns: 65% 13% 20%;
   padding-top: 2%;
   border-top: 10px solid black;
-  background: #d0daff;
+  background-image: linear-gradient(to right, #d6bcf0, #c9cbf5);
   padding-bottom: 2%;
 }
 
+div#basic-info-col {
+  display: flex;
+  flex-direction: column;
+}
 div#basic-info-col > * {
   display: inline-block;
 }
@@ -47,23 +54,33 @@ div#contact-us-button {
   margin: 2vw;
   border: 3px solid black;
   background: #fa385b;
-  vertical-align: middle;
+  width: 20vw;
+}
+h1#footer-title {
+  margin-left: 4%;
+  display: inline-block;
+  font-size: 4vw;
 }
 div#contact-us-button > a {
   text-decoration: none;
   color: black;
-  font-size: 2vw;
+  font-size: 3vw;
+  text-align: center;
 }
 div#contact-us-button:hover {
   text-decoration: underline;
 }
-
-.footer-col > h2 {
-  font-size: 4vw;
+div#title-top {
+  display: inline-block;
+  width: 100%;
 }
 
-#basic-info-col > img {
-  height: 100px;
+.footer-col > h2 {
+  font-size: 3vw;
+}
+
+#basic-info-col img {
+  width: 6vw;
   vertical-align: middle;
   margin-left: 1vw;
 }
@@ -76,7 +93,7 @@ div#contact-us-button:hover {
 #nav-page-col > a {
     color: black;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #socials-col > a:hover,
