@@ -8,102 +8,94 @@ export default {
 
 <template>
   <div id="topbar">
-    <div id="lefthand-menu">
-      <img alt="CPC Logo" src="/assets/images/site-logo.png">
-      <h1 id="title"> <router-link to="/club-website"> {{ title }} </router-link> </h1>
-    </div>
+    <router-link to="/club-website">
+      <div id="lefthand-menu">
+        <img alt="CPC Logo" src="/site-logo.png">
+        <h1 id="title">  {{ title }}  </h1>
+      </div>
+    </router-link>
 
-    <div id="righthand-menu">
-      <router-link id="crew-button" class="header-link" to="/club-website/crew"> Crew </router-link>
-      <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn </router-link>
-      <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive </router-link>
-    </div>
+    <ul id="righthand-menu">
+      <li> <router-link id="about-button" class="header-link" to="/club-website/about"> About </router-link> </li>
+      <li class="spacer"> | </li>
+      <li> <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn </router-link> </li>
+      <li class="spacer"> | </li>
+      <li class="rightmost"> <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive </router-link> </li>
+    </ul>
   </div>
 
   <div id="site-banner">
-    <img alt="CPC Banner" src="/assets/images/banner.png">
+    <img alt="CPC Banner" src="/banner.svg">
+>>>>>>> 4a3b0ff (Restyle + redraw header and site-logo)
   </div>
 
   <div id="ghost-element"></div>
 </template>
 
 <style>
-:root {
-  --header-bar-height: 75px;
-}
-
 div#topbar {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background: #d0daff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-image: linear-gradient(to right, #c9cbf5, #d6bcf0);
 }
 
-#lefthand-menu {
-    height: var(--header-bar-height);
-    display: flex;
-    flex-direction: row;
+div#lefthand-menu {
+  display: grid;
+  grid-template-columns: 13% 70%;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-#lefthand-menu > * {
-    padding-left: 10px;
+div#lefthand-menu > img {
+  width: 80%;
+  margin: 5%;
 }
-#lefthand-menu > img {
-    margin-top: 7px;
-    height: 60px;
-    width: auto;
+h1#title {
+  text-align: left;
+  font-size: 6vh;
 }
-#lefthand-menu > h1#title {
-    padding-top: 15px;
-    font-family: IPS-Medium;
+div#topbar a {
+  text-decoration: none;
+  color: black;
 }
-#lefthand-menu > h1#title > a {
-    text-decoration: none;
-    color: black;
-    padding-top: 15px;
-}
-#lefthand-menu > h1#title > a:hover {
-    text-decoration: underline;
+div#topbar a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
-#righthand-menu {
-    display: inline;
-    float: right;
+ul#righthand-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  justify-content: flex-end;
+}
+ul#righthand-menu > li {
+  display: flex;
+  float: right;
+  align-items: center;
+  font-size: 9vh;
 }
 a.header-link {
-    float: right;
-    font-size: 20px;
-    margin-top: 17px;
-    margin-left: 15px;
-    margin-right: 10px;
-    padding: 7px;
-    border: 2px solid black;
-    color: black;
-    text-decoration: none;
-}
-a.header-link:hover {
-    text-decoration: underline;
-}
-#crew-button {
-    background: #80edb9;
-    font-family: IPS-Medium;
-}
-#learn-button {
-    background: #faee38;
-}
-#archive-button {
-    background: #fa385b;
+  font-size: 6vh;
 }
 
-#site-banner {
-    width: 100%;
-    background-image: linear-gradient(to right, #e4d9eb, #aea9cd);
+li.spacer {
+  margin-left: 2%;
+  margin-right: 2%;
 }
-#site-banner > img {
-    width: 100%;
-    margin-bottom: -1%;
+li.rightmost {
+  margin-right: 2%;
 }
 
-#ghost-element {
-    width: 100%;
-    height: 3vh;
+div#site-banner > img {
+  width: 100%;
+}
+
+div#ghost-element {
+  width: 100%;
+  height: 5%;
 }
 </style>
