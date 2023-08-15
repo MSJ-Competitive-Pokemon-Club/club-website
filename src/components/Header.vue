@@ -51,7 +51,7 @@ div#lefthand-menu > img {
 }
 h1#title {
   text-align: left;
-  font-size: 6vh;
+  font-size: 3.2vw;
 }
 div#topbar a {
   text-decoration: none;
@@ -78,7 +78,7 @@ ul#righthand-menu > li {
   font-size: 9vh;
 }
 a.header-link {
-  font-size: 6vh;
+  font-size: 3.2vw;
 }
 
 li.spacer {
