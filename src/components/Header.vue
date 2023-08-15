@@ -18,9 +18,9 @@ export default {
     <ul id="righthand-menu">
       <li> <router-link id="crew-button" class="header-link" to="/club-website/crew"> Crew </router-link> </li>
       <li class="spacer"> | </li>
-      <li> <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn </router-link> </li>
+      <li> <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn 🎓 </router-link> </li>
       <li class="spacer"> | </li>
-      <li class="rightmost"> <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive </router-link> </li>
+      <li class="rightmost"> <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive 🗃️ </router-link> </li>
     </ul>
   </div>
 
@@ -34,8 +34,10 @@ export default {
 <style>
 div#topbar {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 70%;
   background-image: linear-gradient(to right, #c9cbf5, #d6bcf0);
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 div#lefthand-menu {
@@ -75,7 +77,7 @@ ul#righthand-menu > li {
   display: flex;
   float: right;
   align-items: center;
-  font-size: 9vh;
+  font-size: 4vw;
 }
 a.header-link {
   font-size: 3.2vw;
