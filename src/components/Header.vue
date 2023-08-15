@@ -14,7 +14,7 @@ export default {
     </div>
 
     <div id="righthand-menu">
-      <router-link id="about-button" class="header-link" to="/club-website/about"> About </router-link>
+      <router-link id="crew-button" class="header-link" to="/club-website/crew"> Crew </router-link>
       <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn </router-link>
       <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive </router-link>
     </div>
@@ -81,7 +81,7 @@ a.header-link {
 a.header-link:hover {
     text-decoration: underline;
 }
-#about-button {
+#crew-button {
     background: #80edb9;
 }
 #learn-button {

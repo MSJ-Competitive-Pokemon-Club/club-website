@@ -20,7 +20,7 @@
 
 <template>
   <div class="about">
-    <h1 id="page-title">About - Officers {{ displayYear }} </h1>
+    <h1 id="page-title"> Crew of {{ displayYear }} </h1>
 
     <ul id="year-list">
       <li> <a @click="currentOfficerList = officerData.officers2324; displayYear = '2023-2024';"> 2023-2024 </a> </li>
