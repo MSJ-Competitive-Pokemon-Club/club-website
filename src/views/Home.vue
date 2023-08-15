@@ -129,8 +129,8 @@ div#social-media {
 
 #social_media > h1 {
   text-align: center;
-  font-size: 4vw;
-  padding-bottom: 5%;
+  font-size: 4.3vw;
+  padding-bottom: 2%;
   color: white;
 }
 
@@ -139,6 +139,7 @@ ul#social-media-list > li {
   width: 16vw;
   margin: 2vw;
   padding-bottom: 5%;
+  transition: transform 0.2s ease;
 }
 
 .social-button {
@@ -153,9 +154,8 @@ ul#social-media-list > li > a {
   text-decoration: none;
   color: #283977;
 }
-
-ul#social-media-list > li > a:hover {
-  text-decoration: underline;
+ul#social-media-list > li:hover {
+  transform: scale(1.1);
 }
 
 .social-button > img {

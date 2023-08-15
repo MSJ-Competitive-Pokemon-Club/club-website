@@ -55,6 +55,10 @@ div#contact-us-button {
   border: 3px solid black;
   background: #fa385b;
   width: 20vw;
+  transition: transform 0.1s ease;
+}
+div#contact-us-button:hover {
+  transform: scale(1.05);
 }
 h1#footer-title {
   margin-left: 4%;
@@ -66,9 +70,6 @@ div#contact-us-button > a {
   color: black;
   font-size: 3vw;
   text-align: center;
-}
-div#contact-us-button:hover {
-  text-decoration: underline;
 }
 div#title-top {
   display: inline-block;
@@ -94,11 +95,11 @@ div#title-top {
     color: black;
     text-decoration: none;
     font-size: 2vw;
+    transition: font-size 0.2s ease;
 }
-
 #socials-col > a:hover,
 #nav-page-col > a:hover {
-    text-decoration: underline;
+    font-size: 2.2vw;
 }
 
 #socials-col > a::after,
