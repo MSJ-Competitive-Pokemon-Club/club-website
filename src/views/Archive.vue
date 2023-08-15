@@ -20,7 +20,7 @@
       <br><h1> {{ folder.date }} </h1>
     </div><li class="archive_slideshow" v-for="slideshow in folder.slides">
       <iframe :src="slideshow.url" frameborder="0" class="archive_slide" allowfullscreen="true" width="500%" height="500%"
-      mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+      mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe> <!-- These objects are the actual slides -->
     </li>
   </li>
 

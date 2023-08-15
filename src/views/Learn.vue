@@ -1,6 +1,5 @@
 <script>
-  import LessonButton from "../components/LessonButton.vue"
-
+  import LessonButton from "/src/components/LessonButton.vue"
   import lessonData from "/src/config/lessonInfo.json"
 
   export default {
