@@ -1,5 +1,5 @@
-{
-    "most_recent": [
+{      
+    "slides": [
         {
             "date": "04-25-23",
             "name": "2022-2023 Meeting 2",
@@ -17,10 +17,7 @@
                     "url": "https://docs.google.com/presentation/d/e/2PACX-1vQVIXSK_szPfaHml3ifc4dni51xdzWogrx9VtJpC4I1A-7TOVQaBhEoVKDLA5RYByQYtgVN0ly9NW2H/embed?start=false&loop=false&delayms=3000"
                 }
             ]
-        }
-    ],
-
-    "archival": [
+        },
         {
             "date": "04-05-23",
             "name": "Pre-Club Presentation",
@@ -30,6 +27,5 @@
                 }
             ]
         }
-
     ]
 }
