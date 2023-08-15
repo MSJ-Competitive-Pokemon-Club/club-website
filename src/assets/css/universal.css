@@ -10,9 +10,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 div, p, a {
 =======
 p, a {
 >>>>>>> 7565cda (Use IBM Plex Sans as new font)
+=======
+div, p, a {
+>>>>>>> df017ca (Make button increase in size upon hover)
     font-family: IPS-Regular;
 }

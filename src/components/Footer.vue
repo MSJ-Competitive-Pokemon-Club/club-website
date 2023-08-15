@@ -75,10 +75,6 @@ div#title-top {
   display: inline-block;
   width: 100%;
 }
-div#title-top {
-  display: inline-block;
-  width: 100%;
-}
 
 .footer-col > h2 {
   font-size: 3vw;

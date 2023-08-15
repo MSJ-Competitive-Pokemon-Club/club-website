@@ -8,6 +8,7 @@ export default {
 
 <template>
   <div id="topbar">
+    <div></div>
     <router-link to="/club-website">
       <div id="lefthand-menu">
         <img alt="CPC Logo" src="/assets/images/site-logo.png">
@@ -16,7 +17,7 @@ export default {
     </router-link>
 
     <ul id="righthand-menu">
-      <li> <router-link id="crew-button" class="header-link" to="/club-website/crew"> Crew </router-link> </li>
+      <li> <router-link id="crew-button" class="header-link" to="/club-website/crew"> Crew 👥</router-link> </li>
       <li class="spacer"> | </li>
       <li> <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn 🎓 </router-link> </li>
       <li class="spacer"> | </li>
@@ -34,7 +35,7 @@ export default {
 <style>
 div#topbar {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1% 29% 70%;
   background-image: linear-gradient(to right, #c9cbf5, #d6bcf0);
   padding-top: 1%;
   padding-bottom: 1%;
@@ -49,7 +50,7 @@ div#lefthand-menu {
 }
 div#lefthand-menu > img {
   width: 80%;
-  margin: 5%;
+  margin: 10%;
 }
 h1#title {
   text-align: left;
@@ -58,10 +59,12 @@ h1#title {
 div#topbar a {
   text-decoration: none;
   color: black;
+  transition: transform 0.2s ease;
 }
 div#topbar a:hover {
-  text-decoration: underline;
   color: black;
+  transform: scale(1.1);
+  font-size: 3.2vw;
 }
 
 ul#righthand-menu {
@@ -82,6 +85,7 @@ ul#righthand-menu > li {
 a.header-link {
   font-size: 3.2vw;
 }
+
 
 li.spacer {
   margin-left: 2%;
