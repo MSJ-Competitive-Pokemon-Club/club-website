@@ -12,32 +12,23 @@
   }
 </script>
 
-<style>
-  .officer_image {
-    width:250px;
-  }
-</style>
-
 <template>
-  <div class="about">
+  <div class="crew">
     <h1 id="page-title"> Crew of {{ displayYear }} </h1>
-
     <ul id="year-list">
       <li> <a @click="currentOfficerList = officerData.officers2324; displayYear = '2023-2024';"> 2023-2024 </a> </li>
     </ul>
 
     <ul id="officer-display">
       <li v-for="officer in currentOfficerList">
-        <div class="officer-section">
-          <div class="officer-image-div">
-            <img :src="officer.headshot_url" class="officer-image">
-          </div>
-          <div class="officer-text-section">
-            <h2 class="role-desc"> {{ officer.role }}: </h2>
-            <h1 class="officer-name"> {{ officer.name }} </h1>
-            <p class="officer-grade"> Grade: {{ officer.grade }} </p>
-            <p class="officer-desc"> {{ officer.officer_desc }} </p>
-          </div>
+        <div class="officer-image-div">
+          <img class="officer-image" :src="officer.headshot_url">
+        </div>
+        <div class="officer-text-section">
+          <h2 class="role-desc"> {{ officer.role }}: </h2>
+          <h1 class="officer-name"> {{ officer.name }} </h1>
+          <p class="officer-grade"> Grade: {{ officer.grade }} </p>
+          <p class="officer-desc"> {{ officer.officer_desc }} </p>
         </div>
       </li>
     </ul>
@@ -48,8 +39,8 @@
   <!-- TODO Consider making this a component to import -->
 </template>
 
-<!-- Insert your CSS here -->
 <style>
+
 h1#page-title {
   font-size: 4vw;
   text-align: center;
@@ -63,12 +54,10 @@ ul#year-list li {
   display: inline;
   font-size: 1.8vw;
 }
+
 ul#year-list li:after {
   content: '/';
   white-space: pre;
-}
-
-div.officer-section {
 }
 
 div.officer-image-div {
@@ -79,26 +68,27 @@ div.officer-image-div {
   margin: 0 auto;
   border: 4px solid black;
 }
+
 img.officer-image {
   width: 10vw;
   height: 10vw;
   object-fit: cover;
 }
 
-h2.role-desc {
+div.officer-text-section {
   text-align: center;
+}
+
+h2.role-desc {
   font-size: 2.3vw;
 }
+
 h1.officer-name {
-  text-align: center;
   font-size: 2.5vw;
 }
-p.officer-grade {
-  text-align: center;
-}
+
 p.officer-desc {
-  text-align: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 ul#officer-display {
