@@ -22,7 +22,7 @@
     <ul id="officer-display">
       <li v-for="officer in currentOfficerList">
         <div class="officer-image-div">
-          <img class="officer-image" :src="officer.headshot_url">
+          <img :src="officer.headshot_url" class="officer-image">
         </div>
         <div class="officer-text-section">
           <h2 class="role-desc"> {{ officer.role }}: </h2>
@@ -73,6 +73,8 @@ img.officer-image {
   width: 10vw;
   height: 10vw;
   object-fit: cover;
+  border-radius: 98% 98% 100% 100%;
+  border: 4px solid #f35f5f;
 }
 
 div.officer-text-section {
@@ -88,7 +90,16 @@ h1.officer-name {
 }
 
 p.officer-desc {
+<<<<<<< HEAD:src/views/Crew.vue
   font-size: 2vw;
+=======
+  text-align: center;
+  font-size: 2vw;
+  width: 100%;
+  background: #f1e3fc;
+  border: 1px solid black;
+  padding: 3%;
+>>>>>>> d93c252 (Fix the about/crew page):src/views/About.vue
 }
 
 ul#officer-display {
@@ -102,10 +113,10 @@ ul#officer-display {
 ul#officer-display > li {
   list-style-type: none;
   border: 3px solid black;
-  padding-top: -5%;
   padding: 2%;
-  box-shadow: inset 0 0 0 2px red;
-  border-radius: 10%;
   background: #afaace;
+  display: grid;
+  grid-template-columns: 100%;
+  box-shadow: inset 0 0 0 2px #b1eac1;
 }
 </style>
