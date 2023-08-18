@@ -59,6 +59,7 @@
            id="sidebar-toggle-button">
     <div id="replay-display">
       <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="q0"></iframe>
+    </div>
   </div>
 </template>
 <style>
