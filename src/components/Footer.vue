@@ -8,7 +8,6 @@ export default {}
       <img alt="CPC Logo" src="/src/assets/site-logo.png">
       <div id="contact-us-button">
         <!-- TODO Fill in links -->
-        <!-- TODO Find the club email since I forgor :skull: -->
         <a href="mailto:msjcomppokeclub@gmail.com"> Contact Us! </a>
       </div>
     </div>
