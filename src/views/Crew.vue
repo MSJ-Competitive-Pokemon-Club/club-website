@@ -90,16 +90,12 @@ h1.officer-name {
 }
 
 p.officer-desc {
-<<<<<<< HEAD:src/views/Crew.vue
-  font-size: 2vw;
-=======
   text-align: center;
   font-size: 2vw;
   width: 100%;
   background: #f1e3fc;
   border: 1px solid black;
   padding: 3%;
->>>>>>> d93c252 (Fix the about/crew page):src/views/About.vue
 }
 
 ul#officer-display {

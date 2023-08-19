@@ -45,8 +45,8 @@
           :class="{ 'option': true, 'selected': selectedOption === index }"
           @click="() => {
                   selectedOption = index;
-                  currentReplayLoc = '/club-website/assets/lessons/'+ option + '.html';
-                  currentReplayLocText = '/club-website/assets/text/archive/'+ option + ' Text.html';
+                  currentReplayLoc = '/club-website/assets/lesson-replays/'+ option + '.html';
+                  currentReplayLocText = '/club-website/assets/lesson-descriptions/'+ option + ' Text.html';
                   }"
           >
           {{ option }}
