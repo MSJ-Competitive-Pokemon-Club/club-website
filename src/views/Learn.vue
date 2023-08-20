@@ -8,7 +8,6 @@
         categories: lessonData.categories,
         currentLessonName: "Move Base Power",
         currentReplayLoc: "/club-website/assets/lesson-replays/Move Base Power.html",
-        currentReplayLocText: "/club-website/assets/lesson-descriptions/Move Base Power Text.html",
         options: [
         'Move Base Power',
         'Statuses',
@@ -47,7 +46,6 @@
         @click="() => {
           selectedOption = index;
           currentReplayLoc = '/club-website/assets/lesson-replays/'+ option + '.html';
-          currentReplayLocText = '/club-website/assets/lesson-descriptions/'+ option + ' Text.html';
         }"
       >
       {{ option }}
@@ -57,7 +55,6 @@
 <div class="grid-item">
   <div id="learn-display">
       <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="q0"></iframe>
-      <iframe id="iframe" ref="caption" :src="currentReplayLocText" width="100%" height="600px" frameborder="0"></iframe>
   </div>
 </div>
 </div>
