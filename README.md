@@ -1,14 +1,8 @@
-# cpc-club-website
+# Competitive Pokemon Club Website
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the club website of the Competitive Pokemon Club. 
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This website is written in Vite and Vue JS.
 
 ## Project Setup
 
@@ -16,7 +10,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Hot-Module Reload for Development
 
 ```sh
 npm run dev
@@ -26,4 +20,10 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+### View Compiled Production Build
+
+```sh
+npm run preview
 ```
