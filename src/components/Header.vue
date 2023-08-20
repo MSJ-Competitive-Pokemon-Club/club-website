@@ -11,7 +11,7 @@ export default {
     <div></div>
     <router-link to="/club-website">
       <div id="lefthand-menu">
-        <img alt="CPC Logo" src="/assets/images/site-logo.png">
+        <img alt="CPC Logo" src="$images/site-logo.png">
         <h1 id="title">  {{ title }}  </h1>
       </div>
     </router-link>
@@ -26,7 +26,7 @@ export default {
   </div>
 
   <div id="site-banner">
-    <img alt="CPC Banner" src="/assets/images/banner.svg">
+    <img alt="CPC Banner" src="$images/banner.svg">
   </div>
 
   <div id="ghost-element"></div>

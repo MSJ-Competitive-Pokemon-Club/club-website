@@ -46,7 +46,7 @@
           @click="() => {
                   selectedOption = index;
                   currentReplayLoc = '/club-website/assets/lesson-replays/'+ option + '.html';
-                  currentReplayLocText = '/club-website/assets/lesson-descriptions/'+ option + ' Text.html';
+                  currentReplayLocText = '/club-website/assets/lesson-desc/'+ option + ' Text.html';
                   }"
           >
           {{ option }}

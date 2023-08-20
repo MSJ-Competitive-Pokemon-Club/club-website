@@ -6,7 +6,7 @@ export default {}
   <div id="footer">
     <div id="basic-info-col" class="footer-col">
       <div id="title-top">
-        <img alt="CPC Logo" src="/src/assets/site-logo.png">
+        <img alt="CPC Logo" src="$images/site-logo.png">
         <h1 id="footer-title"> MSJ CPC </h1>
       </div>
       <div id="contact-us-button">

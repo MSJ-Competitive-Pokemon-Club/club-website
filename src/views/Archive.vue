@@ -1,11 +1,12 @@
 <script>
-  import slides_data from "/src/config/slides_data.json"
+  import slidesData from "/src/config/slides_data.json"
 
   export default {
     data() {
         return {
-          all_slidedecks: slides_data.slides,
-          slides_shown: slides_data.slides.slice(0, 2) /* Two slides are displayed by default */
+            folderNames: slidesData.folderNames,
+            folderSlides: slidesData.folderSlides,
+            currentFolder: 0
         }
     }
   }
@@ -13,76 +14,91 @@
 
 <!-- Replace this with backend use of Google API -->
 <template>
-  <h1 class="archive_head"> Archive </h1>
-  <li v-for="folder in slides_shown" class="archive_folders">
-    <div class="archive_text">
-      <h1> {{ folder.name }} </h1>
-      <br><h1> {{ folder.date }} </h1>
-    </div><li class="archive_slideshow" v-for="slideshow in folder.slides">
-      <iframe :src="slideshow.url" frameborder="0" class="archive_slide" allowfullscreen="true" width="500%" height="500%"
-      mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe> <!-- These objects are the actual slides -->
+  <h1 id="archive-title"> Archive </h1>
+  <ul id="section-menu">
+    <li v-for="(name, i) in folderNames"
+        :key="i"
+        @click="currentFolder = i"
+        :class="{ 'selected': currentFolder === i }">
+      <div class="year-list"> {{ name }} </div>
     </li>
-  </li>
+  </ul>
 
-  <button v-if="slides_shown != all_slidedecks" @click="slides_shown = all_slidedecks" class="archive_button">Load older slideshows</button>
-
+  <div v-if="folderSlides[currentFolder].slides.length === 0" class="awaiting-slides-message"> No slides yet... </div>
+  <ul id="slides-display">
+    <li v-for="slides in folderSlides[currentFolder].slides">
+      <h1 class="slides-name"> {{ slides.name }} </h1>
+      <p class="slides-date"> {{ slides.date }} </p>
+      <iframe :src="slides.url" frameborder="0" class="archive-slide" allowfullscreen="true"
+      mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+    </li>
+  </ul>
 </template>
 
 <style>
-  h1 {
-    text-align:center;
-    font-family:Cambria;
-  }
+h1#archive-title {
+  font-size: 4vw;
+  text-align: center;
+}
 
-  .archive_folders {
-    list-style-type: none;
-    background-color:rgb(237, 237, 239);
-  }
+ul#section-menu {
+  display: flex; /* Use flexbox to create a horizontal list */
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+ul#section-menu > li {
+  display: inline-block;
+  margin-right: 2.0vw;
+  transition: transform 0.2s ease;
+}
+ul#section-menu > li:hover {
+  transform: scale(1.1);
+  color: #826bdb;
+}
+ul#section-menu > li.selected {
+  transform: scale(1.1);
+  font-family: IPS-Medium;
+  color: #f23d3d;
+}
 
-  .archive_head {
-    font-size: 2.5em;
-    padding-bottom:50px;
-    border-bottom:3px solid;
-  }
+div.year-list {
+  font-size: 1.8vw;
+}
 
-  .archive_text {
-    width:30%;
-  }
+ul#slides-display {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 3%;
+}
 
-  .archive_text > h1 {
-    font-size:4.5vw;
-  }
+.archive-slide {
+  width: 100%;
+  height: 18.5vw;
+}
 
-  .archive_text, .archive_slideshow {
-    display:inline-block;
-    vertical-align:middle;
-    margin-bottom:200px;
-    margin-top:100px;
-  }
+h1.slides-name {
+  font-size: 2.8vw;
+}
+p.slides-date {
+  font-size: 2.0vw;
+  margin-bottom: 4%;
+}
 
-  .archive_slideshow {
-    position:relative;
-    width:60%;
-    padding-bottom: 35%; /* For aspect ratio */
-    margin-left:2%;
-  }
+ul#slides-display > li {
+  border: 1px solid black;
+  padding: 5%;
+  display: grid;
+  grid-template-rows: 3.2vw 3.2vw 19vw;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: #d8d8dd;
+}
 
-  .archive_slideshow iframe {
-    position:absolute;
-    height:100%;
-  }
-
-  .archive_slide {
-    width:100%;
-  }
-
-  .archive_button {
-    padding:20px;
-    font-size:2em;
-    font-family:Cambria;
-    width:100%;
-    background-color:rgb(176, 170, 170);
-    margin-bottom:100px;
-  }
-
+div.awaiting-slides-message {
+  font-size: 4vw;
+  text-align: center;
+}
 </style>
