@@ -1,13 +1,20 @@
 <script>
   import slidesData from "/src/config/slides_data.json"
 
+  import ModalWindow from "@/components/ModalWindow.vue"
+
   export default {
     data() {
         return {
-            folderNames: slidesData.folderNames,
-            folderSlides: slidesData.folderSlides,
-            currentFolder: 0
+          folderNames: slidesData.folderNames,
+          folderSlides: slidesData.folderSlides,
+          currentFolder: 0,
+          currentSlideIndex: 0,
+          showModal: false
         }
+    },
+    components: {
+      ModalWindow
     }
   }
 </script>
@@ -26,14 +33,37 @@
 
   <div v-if="folderSlides[currentFolder].slides.length === 0" class="awaiting-slides-message"> No slides yet... </div>
   <ul id="slides-display">
-    <li v-for="slides in folderSlides[currentFolder].slides">
-      <h1 class="slides-name"> {{ slides.name }} </h1>
+    <li v-for="(slides, i) in folderSlides[currentFolder].slides" :key="i">
+      <div class="name-mag-row">
+        <h1 class="slides-name"> {{ slides.name }} </h1>
+        <p class="magnify-button"
+           @click="() => {
+                    showModal = true;
+                    currentSlideIndex = i;
+                  }">
+          ⛶
+        </p>
+      </div>
       <p class="slides-date"> {{ slides.date }} </p>
-      <iframe :src="slides.url" frameborder="0" class="archive-slide" allowfullscreen="true"
-      mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+      <iframe :src="slides.url"
+              frameborder="0"
+              class="archive-slide"
+              allowfullscreen="true"
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true" />
     </li>
   </ul>
+
+  <div v-if="folderSlides[currentFolder].slides.length > 0">
+    <ModalWindow
+      :name="folderSlides[currentFolder].slides[currentSlideIndex].name"
+      :date="folderSlides[currentFolder].slides[currentSlideIndex].date"
+      :url="folderSlides[currentFolder].slides[currentSlideIndex].url"
+      :showModal="showModal"
+      @close="showModal = false" />
+  </div>
 </template>
+
 
 <style>
 h1#archive-title {
@@ -75,13 +105,28 @@ ul#slides-display {
 }
 
 .archive-slide {
+  aspect-ratio: 16 / 9;
   width: 100%;
-  height: 18.5vw;
+  height: 100%;
 }
 
 h1.slides-name {
   font-size: 2.8vw;
+  display: inline-block;
 }
+p.magnify-button {
+  font-size: 2.8vw;
+  display: inline-block;
+  float: right;
+  margin-right: 2.5%;
+  margin-top: -5%;
+  transition: transform 0.2s ease;
+}
+p.magnify-button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 p.slides-date {
   font-size: 2.0vw;
   margin-bottom: 4%;

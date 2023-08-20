@@ -53,6 +53,7 @@
 #site-title {
   font-size: 4vw; /* vw stands for 'viewport width' */
   padding-bottom: 4%;
+  text-align: center;
 }
 
 div#about-us {

@@ -1,5 +1,4 @@
 <script>
-  import LessonButton from "/src/components/LessonButton.vue"
   import lessonData from "/src/config/lessonInfo.json"
 
   export default {
@@ -20,15 +19,7 @@
         selectedOption: 0,
         lessonSidebarClosed: false
       }
-      
-    },
-    components: {
-      LessonButton,
-    },
-    methods: {
-
     }
-    
   }
 
 </script>
