@@ -48,9 +48,7 @@
            :value="(lessonSidebarClosed ? '⇒' : '⇐')"
            @click="lessonSidebarClosed = !lessonSidebarClosed;"
            id="sidebar-toggle-button">
-    <div id="replay-display">
-      <iframe id="iframe" ref="battle" :src="currentReplayLoc" width="100%" height="600px" frameborder="q0"></iframe>
-    </div>
+    <iframe id="iframe" class="replay-iframe" ref="battle" :src="currentReplayLoc" />
   </div>
 </template>
 <style>
@@ -64,6 +62,7 @@ div#learn-container {
   grid-template-columns: 18% 2% 80%;
   width: 99.5%;
   transition: grid-template-columns 0.4s ease;
+  margin-bottom: 3%;
 }
 div#learn-container.close-sidebar {
   grid-template-columns: 0% 2% 98%;
@@ -117,5 +116,10 @@ input#sidebar-toggle-button {
 }
 input#sidebar-toggle-button:hover {
   border: 2px solid grey;
+}
+
+iframe.replay-iframe {
+  width: 100%;
+  height: 600px;
 }
 </style>
