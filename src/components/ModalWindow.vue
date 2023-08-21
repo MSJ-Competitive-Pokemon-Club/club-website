@@ -53,6 +53,7 @@ div.modal-content {
   background: #fbfbfb;
   padding: 20px;
   border-radius: 5px;
+  height: 90%;
 }
 
 div.title-row {
@@ -79,8 +80,8 @@ div.title-row a:hover {
 }
 
 iframe.enlarged-archive-slide {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 87%;
 }
 </style>
