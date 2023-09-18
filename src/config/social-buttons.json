@@ -3,17 +3,17 @@
         {
             "name": "Facebook",
             "link": "https://www.facebook.com/groups/636866185077720",
-            "path": "/club-website/assets/images/social-logos/facebook-logo.png"
+            "path": "/assets/images/social-logos/facebook-logo.png"
         },
         {
             "name": "Discord",
             "link": "https://discord.gg/EUG3r98Hz",
-            "path": "/club-website/assets/images/social-logos/discord-logo.png"
+            "path": "/assets/images/social-logos/discord-logo.png"
         },
         {
             "name": "Instagram",
             "link": "https://www.instagram.com/msj_competitivepokemonclub/",
-            "path": "/club-website/assets/images/social-logos/instagram-logo.png"
+            "path": "/assets/images/social-logos/instagram-logo.png"
         }
     ]
 }

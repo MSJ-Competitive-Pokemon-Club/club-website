@@ -9,7 +9,7 @@ export default {
 <template>
   <div id="topbar">
     <div></div>
-    <router-link to="/club-website">
+    <router-link to="/">
       <div id="lefthand-menu">
         <img alt="CPC Logo" src="$images/site-logo.png">
         <h1 id="title">  {{ title }}  </h1>
@@ -17,11 +17,11 @@ export default {
     </router-link>
 
     <ul id="righthand-menu">
-      <li> <router-link id="crew-button" class="header-link" to="/club-website/crew"> Crew 👥</router-link> </li>
+      <li> <router-link id="crew-button" class="header-link" to="/crew"> Crew 👥</router-link> </li>
       <li class="spacer"> | </li>
-      <li> <router-link id="learn-button" class="header-link" to="/club-website/learn"> Learn 🎓 </router-link> </li>
+      <li> <router-link id="learn-button" class="header-link" to="/learn"> Learn 🎓 </router-link> </li>
       <li class="spacer"> | </li>
-      <li class="rightmost"> <router-link id="archive-button" class="header-link" to="/club-website/archive"> Archive 🗃️ </router-link> </li>
+      <li class="rightmost"> <router-link id="archive-button" class="header-link" to="/archive"> Archive 🗃️ </router-link> </li>
     </ul>
   </div>
 
