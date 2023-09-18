@@ -6,22 +6,22 @@ import Archive from "@/views/Archive.vue"
 
 const routes = [
   {
-    path: "/club-website",
+    path: "/",
     name: "Home",
     componenet: Home,
   },
   {
-    path: "/club-website/crew",
+    path: "/crew",
     name: "Crew",
     componenet: Crew,
   },
   {
-    path: "/club-website/learn",
+    path: "/learn",
     name: "Learn",
     componenet: Learn,
   },
   {
-    path: "/club-website/archive",
+    path: "/archive",
     name: "Archive",
     componenet: Archive,
   },

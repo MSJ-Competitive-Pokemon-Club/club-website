@@ -8,8 +8,8 @@
       return {
         welcome_message,
         socialsButtons: socialsData.socials,
-        CPC_logo: '/club-website/assets/images/CPC_logo_full.png', // The Public folder contains mostly static images.
-        doorLoc: '/club-website/assets/images/door-open.png'
+        CPC_logo: '/assets/images/CPC_logo_full.png', // The Public folder contains mostly static images.
+        doorLoc: '/assets/images/door-open.png'
       }
     }
   }

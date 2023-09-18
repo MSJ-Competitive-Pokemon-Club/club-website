@@ -10,10 +10,10 @@ import Archive from "@/views/Archive.vue"
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/club-website",         name: "Home",    component: Home    },
-    { path: "/club-website/crew",   name: "Crew",   component: Crew   },
-    { path: "/club-website/learn",   name: "Learn",   component: Learn   },
-    { path: "/club-website/archive", name: "Archive", component: Archive },
+    { path: "/",        name: "Home",    component: Home    },
+    { path: "/crew",    name: "Crew",   component: Crew   },
+    { path: "/learn",   name: "Learn",   component: Learn   },
+    { path: "/archive", name: "Archive", component: Archive },
   ]
 })
 
