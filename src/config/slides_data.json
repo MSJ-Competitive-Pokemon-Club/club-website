@@ -7,11 +7,61 @@
     "folderSlides": [
         {
             "slides": [
-                {   "date": "08-22-23",
+                {
+                    "date": "12-05-23",
+                    "name": "2023-4 Meeting 12",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vTFAPsR_3Fnq_3kGf9N_4FEM0qXMbI78UTqqb1l5zU9Nk2iNBs5KpXQD4qVHm8bgx_03bs3JxEPGDIj/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "11-28-23",
+                    "name": "2023-4 Meeting 11",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vQ-ZUkWyynCUKYlAGnNbeKW60XcL-t5Dt2DfvlGTph9MBXaE0OfMWxkURRh7zRr0FG6YM_TMtTymfoZ/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "11-14-23",
+                    "name": "2023-4 Meeting 10",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vRuICnryUS2lzk9YQaTgxE8udwTtpzVRl3O1q8dDJ_OMicCZtPJdsGKmsb4ZemFbJxlTKX4dLt2lO42/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "11-07-23",
+                    "name": "2023-4 Meeting 9",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vQTH8DJtmY2V_oxmisuquYb6p_FxpV4-O6huk4-sv2biKt-G03Wrrn_4DznU4AUCR2uw0sANRqIUvhu/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "10-17-23",
+                    "name": "2023-4 Meeting 8",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vQPhLpJYZ9LXtz9EyTuFtvT_VM5rpt8CvJIRrzDwgqiMTFnv9UCpOjK4TC4IxKZK3d334hwAvs7eSCI/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "10-10-23",
+                    "name": "2023-4 Meeting 7",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vT5ZVSPVTfNFpCWMe53I3A94ne5b6PTknMDJJhhYRP5ALF_SLDo1v5MG-FVpDpVi0edja5nGH_sR0HG/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "10-03-23",
+                    "name": "2023-4 Meeting 6",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vRjAXg9lHSwkRngZydK6pwYZKfCCjbmElkIf3PXjYgnjFUdFAQjA8sL4spfhDgA_KCveBbUED8wqOd6/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "09-12-23",
+                    "name": "2023-4 Meeting 4",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vSb7a4L7zY7pvoHYJvVphiI7qy5fAsQJs2p-qrsyKG1W-Lr8DLfpG3OOb8PlfgMmVIwQVTlTwtlxBRh/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "09-05-23",
+                    "name": "2023-4 Meeting 3",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vQIjZQj8-iU14mYb1NbxvQijGFYmc802-5UtjiND7ZWDfAUVpai7OcGUFtfqSg_9oNny-8pq-8Aq0-0/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "08-29-23",
+                    "name": "2023-4 Meeting 2",
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vScFnW3ffZI5ma3DF0a33y8XrlgRcKRDawlqr2oFvVasn0Z83e6UhD9YtsweH1XYIy32_DenRocxmk3/embed?start=false&loop=false&delayms=3000"
+                },
+                {
+                    "date": "08-22-23",
                     "name": "2023-4 Meeting 1",
-                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vRqDcG7lIAzpyAoxmjzEDns2Ucov8njg-02GB0eJBaytfgOxFxXJfTScxP9AB-xpmebiiBPEM0wYf4y/embed?start=true&loop=false&delayms=3000"
-
-            }
+                    "url": "https://docs.google.com/presentation/d/e/2PACX-1vRqDcG7lIAzpyAoxmjzEDns2Ucov8njg-02GB0eJBaytfgOxFxXJfTScxP9AB-xpmebiiBPEM0wYf4y/embed?start=false&loop=false&delayms=3000"
+                }
             ]
         },
         {
